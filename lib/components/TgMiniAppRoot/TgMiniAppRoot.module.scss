@@ -49,7 +49,7 @@
 .TgMiniAppRoot {
   background:var(--tgui_background);
   color:var(--tgui_text_primary);
-  padding:0 16px;
+  padding:16px;box-sizing: border-box;
   min-width:100vw;width:100vw;
   min-height:100vh;
   transition:background .1s;
