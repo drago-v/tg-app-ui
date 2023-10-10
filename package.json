@@ -1,12 +1,18 @@
 {
   "name": "tg-app-ui",
-  "private": true,
   "version": "0.0.1",
   "type": "module",
   "main": "dist/main.js",
   "types": "dist/main.d.ts",
+  "licence": "MIT",
+  "author": "drago_v",
   "files": [
-    "dist"
+    "dist",
+    "EXAMPLE.md",
+    "EXAMPLE.ru.md",
+    "README.md",
+    "README.ru.md",
+    "LICENSE"
   ],
   "scripts": {
     "dev": "vite",

@@ -12,7 +12,9 @@ export const SwitchLanguage = () => {
     const {lang, currentLang, setLang} = useLang();
 
     useEffect(() => {
-        WebApp.setNavigateBack();
+        if (WebApp?.setNavigateBack !== undefined) {
+            WebApp.setNavigateBack();
+        }
     }, []);
 
     return <TgBlock

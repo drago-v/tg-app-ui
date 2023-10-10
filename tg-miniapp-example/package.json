@@ -1,8 +1,10 @@
 {
   "name": "tg-miniapp-example",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
   "type": "module",
+  "license": "MIT",
+  "author": "drago_v",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
@@ -16,7 +18,7 @@
     "react-icons": "^4.11.0",
     "react-router": "^6.16.0",
     "react-router-dom": "^6.16.0",
-    "tg-app-ui": "file:.."
+    "tg-app-ui": "^0.0.1"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",
@@ -27,6 +29,7 @@
     "eslint": "^8.45.0",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.4.3",
+    "gh-pages": "^6.0.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.5",
     "vite-plugin-mkcert": "^1.16.0"

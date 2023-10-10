@@ -6,7 +6,8 @@ import {
     TgBlockText,
     useLang,
     useScreenLoader,
-    useTelegramWebApp
+    useTelegramWebApp,
+    SolidButton
 } from "tg-app-ui";
 import {IoSettingsSharp} from "react-icons/io5";
 
@@ -20,7 +21,9 @@ export const Loaders = () => {
     const [buttonLoading, setButtonLoading] = useState(false);
 
     useEffect(() => {
-        WebApp.setNavigateBack();
+        if (WebApp?.setNavigateBack !== undefined) {
+            WebApp.setNavigateBack();
+        }
     }, []);
 
     return <>
@@ -43,9 +46,8 @@ export const Loaders = () => {
             />
         </TgBlock>
 
-        <TgBlockButton
+        <SolidButton
             text={buttonLoading ? lang.loaders_stop : lang.loaders_start}
-            type="solid"
             loading={buttonLoading}
             onClick={() => {
                 setButtonLoading(!buttonLoading)

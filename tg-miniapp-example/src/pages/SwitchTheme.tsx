@@ -16,7 +16,9 @@ export const SwitchTheme = () => {
     const WebApp = useTelegramWebApp();
 
     useEffect(() => {
-        WebApp.setNavigateBack();
+        if (WebApp?.setNavigateBack !== undefined) {
+            WebApp.setNavigateBack();
+        }
     }, []);
 
     return <>

@@ -17,8 +17,11 @@ export type { TgBlockInputProps } from "./components/TgBlockInput/TgBlockInput.t
 export { TgBlockText } from "./components/TgBlockText/TgBlockText.tsx";
 export type { TgBlockTextProps } from "./components/TgBlockText/TgBlockText.tsx";
 
-export { SolidButton } from "./components/Button/SolidButton.tsx";
-export type { TgBlockButtonProps } from "./components/Button/SolidButton.tsx";
+export { TgBlockButton } from "./components/TgBlockButton/TgBlockButton.tsx";
+export type { TgBlockButtonProps } from "./components/TgBlockButton/TgBlockButton.tsx";
+
+export { SolidButton } from "./components/SolidButton/SolidButton.tsx";
+export type { SolidButtonProps } from "./components/SolidButton/SolidButton.tsx";
 
 export { TgUiIconChevron } from "./components/Icons/TgUiIcons.tsx";
 export { TgUiIconInfo } from "./components/Icons/TgUiIcons.tsx";

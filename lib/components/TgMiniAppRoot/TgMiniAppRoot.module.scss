@@ -50,6 +50,8 @@
   background:var(--tgui_background);
   color:var(--tgui_text_primary);
   padding:0 16px;
+  min-width:100vw;width:100vw;
+  min-height:100vh;
   transition:background .1s;
   a {color:var(--tgui_link_color);}
 }

@@ -22,7 +22,9 @@ export const Menu = () => {
     const {lang} = useLang();
 
     useEffect(() => {
-        WebApp.setNavigateBack();
+        if (WebApp?.setNavigateBack !== undefined) {
+            WebApp.setNavigateBack();
+        }
     }, []);
 
     return <>

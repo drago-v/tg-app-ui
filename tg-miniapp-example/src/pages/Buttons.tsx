@@ -4,7 +4,8 @@ import {
     TgBlockButton,
     TgBlockText,
     useLang,
-    useTelegramWebApp
+    useTelegramWebApp,
+    SolidButton
 } from "tg-app-ui";
 import {IoCheckmark, IoClose, IoSettingsSharp, IoTrashSharp} from "react-icons/io5";
 
@@ -15,7 +16,9 @@ export const Buttons = () => {
     const {lang} = useLang();
 
     useEffect(() => {
-        WebApp.setNavigateBack();
+        if (WebApp?.setNavigateBack !== undefined) {
+            WebApp.setNavigateBack();
+        }
     }, []);
 
     return <>
@@ -36,13 +39,13 @@ export const Buttons = () => {
 
         <TgBlockButton text={lang.button_disabled} disabled />
 
-        <TgBlockButton text={lang.button_solid} type="solid"  />
+        <SolidButton text={lang.button_solid}  />
 
-        <TgBlockButton text={lang.button_accept} icon={<IoCheckmark />} type="solid" color="green"  />
+        <SolidButton text={lang.button_accept} icon={<IoCheckmark />} color="green"  />
 
-        <TgBlockButton text={lang.button_decline} icon={<IoClose />} type="solid" color="red" />
+        <SolidButton text={lang.button_decline} icon={<IoClose />} color="red" />
 
-        <TgBlockButton text={lang.button_disabled} type="solid" disabled  />
+        <SolidButton text={lang.button_disabled} disabled  />
 
     </>
 

@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react";
 import {TgMiniAppRoot} from "../TgMiniAppRoot/TgMiniAppRoot.tsx";
+import {TgBlockText} from "./TgBlockText.tsx";
 import {TgBlock} from "../TgBlock/TgBlock.tsx";
-import {TgBlockItem} from "../TgBlockItem/TgBlockItem.tsx";
 
-const meta: Meta<typeof TgMiniAppRoot> = {
-    component: TgMiniAppRoot,
+const meta: Meta<typeof TgBlockText> = {
+    component: TgBlockText,
     tags: ["autodocs"],
     parameters: {
         controls: {
@@ -15,7 +15,9 @@ const meta: Meta<typeof TgMiniAppRoot> = {
         (Story) => (
             <TgMiniAppRoot>
                 <div style={{padding:20,maxWidth:400,margin:'0 auto'}}>
-                    <Story />
+                    <TgBlock title="Simple text">
+                        <Story />
+                    </TgBlock>
                 </div>
             </TgMiniAppRoot>
         )
@@ -24,19 +26,12 @@ const meta: Meta<typeof TgMiniAppRoot> = {
 
 export default meta;
 
-type Story = StoryObj<typeof TgMiniAppRoot>;
+type Story = StoryObj<typeof TgBlockText>;
 
-export const SimpleInput: Story = {
+export const SimpleText: Story = {
     args: {
-
+        children: "This is simple text block"
     },
-    render: () => {
-        return <TgMiniAppRoot>
-            <TgBlock title="Sample block">
-                <TgBlockItem text="Sample block item" />
-            </TgBlock>
-        </TgMiniAppRoot>
-    }
 };
 
 

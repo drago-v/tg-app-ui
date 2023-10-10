@@ -50,7 +50,9 @@ export const Forms = () => {
     const [selectedValue, setSelectedValue] = useState(1);
 
     useEffect(() => {
-        WebApp.setNavigateBack();
+        if (WebApp?.setNavigateBack !== undefined) {
+            WebApp.setNavigateBack();
+        }
     }, []);
 
     return <>
