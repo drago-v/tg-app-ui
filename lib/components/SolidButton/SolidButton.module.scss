@@ -1,0 +1,28 @@
+@import "../../index";
+
+.SolidButton {
+
+  display:flex;align-items: center;
+  height:42px;border-radius:var(--tgui_block_border_radius);padding:0 12px;
+  justify-content: center;font-size:16px;
+  background:var(--tgui_button_background);color:var(--tgui_button_text_color);
+  cursor:pointer;user-select: none;
+  opacity:1;transition:opacity .2s;
+
+  &Wrapper {
+    margin:10px 0;
+  }
+  &Text {font-size:15px;line-height:1;}
+
+  &Icon {
+    margin-right:10px;display:flex;align-items: center;justify-content: center;
+  }
+
+  &_disabled {cursor:default;opacity:.4;}
+  &_red {background:var(--tgui_red);}
+  &_green {background:var(--tgui_green);}
+  &_yellow {background:var(--tgui_yellow);}
+  &_lightblue {background:var(--tgui_lightblue);}
+  &_violet {background:var(--tgui_violet);}
+
+}

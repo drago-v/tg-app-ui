@@ -1,0 +1,17 @@
+@import "../../index";
+
+.ScreenLoader {
+  &Wrapper {
+    display:flex;align-items: center;justify-content: center;
+    flex-direction: column;
+    color:var(--tgui_text_secondary);
+  }
+  &Icon {
+    padding:4px;
+    &Error {color:var(--tgui_red);}
+  }
+  &Error {
+    font-size:11px;text-align:center;
+    color:var(--tgui_red);max-width:120px;
+  }
+}

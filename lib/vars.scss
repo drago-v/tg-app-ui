@@ -1,0 +1,45 @@
+body {
+  --tgui_block_border_radius     : 10px;
+  --tgui_background         : #EEEEEE;
+  --tgui_background_accent  : #FFFFFF;
+  --tgui_text_primary       : #000000;
+  --tgui_text_secondary     : #999999;
+  --tgui_link_color         : #5B7ADD;
+  --tgui_button_background  : #2B7BF7;
+  --tgui_button_text_color  : #FFFFFF;
+  --tgui_separator          : rgba(0, 0, 0, .03);
+  --tgui_switch_background  : #D3D3D6;
+  --tgui_green              : #65C366;
+  --tgui_yellow             : #F6CE46;
+  --tgui_orange             : #F19A37;
+  --tgui_red                : #EA4E3D;
+  --tgui_pink               : #EA445A;
+  --tgui_violet             : #A257D6;
+  --tgui_blue               : #3478F5;
+  --tgui_lightblue          : #59A8D5;
+  --tgui_grey               : #8E8E93;
+  --tgui_lightgrey          : #D3D3D6;
+}
+
+body[theme="dark"] {
+  --tgui_background         : #000000;
+  --tgui_background_accent  : #1C1C1D;
+  --tgui_text_primary       : #DEDEDE;
+  --tgui_text_secondary     : #9E9E9E;
+  --tgui_link_color         : #5186EF;
+  --tgui_button_background  : #2B7BF7;
+  --tgui_button_text_color  : #FFFFFF;
+  --tgui_separator          : rgba(255, 255, 255, .03);
+  --tgui_switch_background  : #39393C;
+}
+
+body[theme="telegram"] {
+  --tgui_background         : var(--tg-theme-secondary-bg-color);
+  --tgui_background_accent  : var(--tg-theme-bg-color);
+  --tgui_text_primary       : var(--tg-theme-text-color);
+  --tgui_text_secondary     : var(--tg-theme-hint-color);
+  --tgui_link_color         : var(--tg-theme-link-color);
+  --tgui_button_background  : var(--tg-theme-button-color);
+  --tgui_button_text_color  : var(--tg-theme-button-text-color);
+  --tgui_separator          : rgba(255, 255, 255, .03);
+}

@@ -1,0 +1,20 @@
+@import "../../index";
+
+.TgBlockButton {
+  display:flex;align-items: center;justify-content: flex-start;
+  height:42px;border-radius:var(--tgui_block_border_radius);padding:0 12px;
+  cursor:pointer;user-select: none;
+  background:var(--tgui_background_accent);color:var(--tgui_blue);
+  &_disabled {
+    cursor:default;
+    & > div {opacity:.4;}
+  }
+  &_red {color:var(--tgui_red);}
+  &Wrapper {
+    margin:10px 0;
+  }
+  &Text {font-size:15px;line-height:1;}
+  &Icon {
+    margin-right:10px;display:flex;align-items: center;justify-content: center;
+  }
+}

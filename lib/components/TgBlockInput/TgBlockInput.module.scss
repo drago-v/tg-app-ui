@@ -1,0 +1,32 @@
+@import "lib/index";
+
+.input {
+  width:100%;box-sizing:border-box;position:relative;
+  padding:0 16px;border-radius:12px;border:1px solid var(--tgui_background_accent);
+  input, textarea {
+    height:42px;font-size:14px;font-family:inherit;
+    background:none !important;
+    border:none !important;
+    width:100%;box-sizing: border-box;font-weight:400;
+    outline:none !important;color:var(--tgui_text_primary);border-radius:12px;
+  }
+  textarea {
+    min-height:48px;height:auto;resize: none;padding-top:15px;padding-bottom:12px;
+  }
+  &Error {
+    border:1px solid var(--tgui_red);box-sizing: border-box;
+  }
+  &Success {
+    border:1px solid var(--tgui_red);box-sizing: border-box;
+  }
+  &IconRight {padding-right:38px;}
+  &IconLeft {padding-left:38px;}
+  .iconRight {
+    position:absolute;top:0;right:0;display:flex;align-items: center;justify-content: center;
+    width:42px;height:42px;line-height: 1;color:var(--tgui_text_secondary);
+  }
+  .iconLeft {
+    position:absolute;top:0;left:0;display:flex;align-items: center;justify-content: center;
+    width:42px;height:42px;line-height: 1;color:var(--tgui_text_secondary);
+  }
+}

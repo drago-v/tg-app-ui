@@ -1,0 +1,31 @@
+@import "../../index";
+
+.TgBlock {
+
+  &Wrapper {
+    width:100%;margin:24px 0 24px 0;
+  }
+
+  &Content {
+    background:var(--tgui_background_accent);border-radius:12px;
+    overflow:hidden;width:100%;box-sizing: border-box;
+  }
+
+  &Title {
+    margin:0 0 8px 0;font-weight:400;font-size:13px;color:var(--tgui_text_secondary);
+    text-transform: uppercase;padding-left:16px;user-select:none;
+  }
+
+  &Caption {
+    color:var(--tgui_text_secondary);font-size:12px;margin-top:8px;
+    padding:0 16px;
+    a {color:var(--tgui_link_color);text-decoration:none;}
+    &Error {color:var(--tgui_red);}
+  }
+
+
+  &Link {
+    text-decoration:none;color:var(--text);display:block;
+  }
+
+}

@@ -1,0 +1,34 @@
+@import "../../index";
+
+.Modal {
+  &Wrapper {
+    position:fixed;top:0;left:0;width:100vw;height:100vh;
+    display:flex;align-items: center;justify-content: center;
+    opacity:1;transition:opacity .2s;
+    &Hidden {opacity:0;}
+  }
+  &DarkBackground {
+    position:fixed;top:0;left:0;width:100%;height:100%;
+    background:#000;opacity:.666;z-index:999;
+  }
+  &Content {
+    font-size:14px;
+    &Wrapper {
+      position:relative;background:var(--tgui_background_accent);
+      z-index:1000;border-radius: 16px;padding:12px;
+      color:var(--tgui_text_primary);width:auto;max-width:320px;
+      .close {
+        position:absolute;top:-36px;right:0;opacity:.3;
+        color:#FFF;cursor:pointer;transition:opacity .2s;
+        &:hover, &:focus, &:active {opacity:1;}
+      }
+    }
+    &Icon {
+      width:100%;display: flex;align-items: center;justify-content: center;
+      margin-bottom:10px;
+    }
+    &Title {
+      font-size:15px;font-weight:500;text-align:center;margin-bottom:10px;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "lib/index";
+
+.TgBlockText {
+  padding:12px;line-height:1.25;
+  &:first-child {margin-top:0;}
+  &:last-child {margin-bottom:0;}
+  &_size {
+    &_s {font-size:12px;}
+    &_m {font-size:13.5px;}
+    &_l {font-size:15px;}
+  }
+  &_color {
+    &_primary {color:var(--tgui_text_primary);}
+    &_secondary {color:var(--tgui_text_secondary);}
+  }
+}
