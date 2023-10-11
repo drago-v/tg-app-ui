@@ -23,6 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
+srotybook-static
+
 #example directories
 tg-miniapp-example/node_modules
 tg-miniapp-example/dist
