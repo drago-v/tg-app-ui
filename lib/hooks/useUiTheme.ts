@@ -7,7 +7,7 @@ export const useUiTheme = () => {
 
   const change = (newTheme: uiThemeType) => {
     document.body.setAttribute("theme", newTheme);
-
+    document.getElementById('TgMiniAppRoot')?.setAttribute("theme", newTheme);
     setTheme(newTheme);
   };
 

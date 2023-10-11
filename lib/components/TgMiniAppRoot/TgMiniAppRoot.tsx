@@ -15,12 +15,12 @@ export const TgMiniAppRoot = ({
   children,
 }: TgMiniAppRootProps) => {
   return (
-    <LanguageProvider languages={languages}>
-      <ModalProvider>
-        <div className={css.TgMiniAppRoot}>
+    <div className={css.TgMiniAppRoot} id="TgMiniAppRoot">
+      <LanguageProvider languages={languages}>
+        <ModalProvider>
           <div className={css.TgMiniAppRootContent}>{children}</div>
-        </div>
-      </ModalProvider>
-    </LanguageProvider>
+        </ModalProvider>
+      </LanguageProvider>
+    </div>
   );
 };
